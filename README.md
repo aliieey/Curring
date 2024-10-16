@@ -57,7 +57,7 @@ const makeApiCall = (baseUrl) => (endpoint) => (params) => {
 
 const apiCallWithBase = makeApiCall('https://api.example.com');
 
-// Different API calls with the same base URL
+
 apiCallWithBase('users')({ id: 1 }).then(data => console.log(data));
 apiCallWithBase('posts')({ userId: 1 }).then(data => console.log(data));
 
